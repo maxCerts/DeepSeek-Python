@@ -1,0 +1,1 @@
+print("Hello today we are learning about DeepSeek")

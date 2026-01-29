@@ -1,0 +1,50 @@
+{
+    "models": [
+        {
+            "title": "Ollama",
+            "provider": "ollama",
+            "model": "deepseek-r1:8b"
+        }
+    ],
+    "tabAutocompleteModel": {
+        "title": "Ollama",
+        "provider": "ollama",
+        "model": "deepseek-r1:1.5b"
+    },
+    "embeddingsProvider": {
+        "provider": "ollama",
+        "model": "deepseek-r1:1.5b"
+    },
+    "allowAnonymousTelemetry": false,
+    "embeddingsProviderApiBase": "http://localhost:11434",
+    "customCommands": [
+        {
+            "name": "test",
+            "prompt": "Write a comprehensive set of unit tests for the selected code. It should setup, run tests that check for correctness including important edge cases, and teardown. Ensure the tests are complete and professional. Assume the testing framework is already configured.",
+            "description": "Write unit tests for selected code"
+        }
+    ],
+    "contextProviders": [
+        {
+            "name": "code"
+        },
+        {
+            "name": "docs"
+        },
+        {
+            "name": "diff"
+        },
+        {
+            "name": "terminal"
+        },
+        {
+            "name": "problems"
+        },
+        {
+            "name": "folder"
+        },
+        {
+            "name": "codebase"
+        }
+    ]
+}
